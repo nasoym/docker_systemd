@@ -5,6 +5,7 @@ RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y dbus systemd
 
-CMD ["/sbin/init"]
+CMD ["/bin/systemd"]
+# CMD ["/sbin/init"]
 
 
